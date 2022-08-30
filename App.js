@@ -33,7 +33,12 @@ export default class App extends Component {
           </View>
 
           <View style={[styles.box, styles.box10]}>
-            <Text style={[styles.textHead, { color: "#105AA6" }]}>Banner</Text>
+            {/* <Text style={[styles.textHead, { color: "#105AA6" }]}>Banner</Text> */}
+            <Image
+              style={[styles.imageBanner]}
+              // resizeMode="cover"
+              source={require("./assets/banner.png")}
+            />
           </View>
         </View>
 
@@ -239,9 +244,10 @@ const styles = StyleSheet.create({
     height: box_height,
     // width: 100,
     // backgroundColor: "orange",
-    paddingTop: 30,
+    paddingTop: 5,
     flex: 1,
     alignContent: "center",
+    alignItems: "center",
   },
 
   wrapper: {},
